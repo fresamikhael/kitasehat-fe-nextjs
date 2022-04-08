@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function index() {
   return (
     <>
@@ -36,51 +34,9 @@ export default function index() {
                   Doctors
                 </a>
               </li>
-              <li className="dropdown">
-                <a href="#">
-                  <span>Drop Down</span> <i className="bi bi-chevron-down"></i>
-                </a>
-                <ul>
-                  <li>
-                    <a href="#">Drop Down 1</a>
-                  </li>
-                  <li className="dropdown">
-                    <a href="#">
-                      <span>Deep Drop Down</span>
-                      <i className="bi bi-chevron-right"></i>
-                    </a>
-                    <ul>
-                      <li>
-                        <a href="#">Deep Drop Down 1</a>
-                      </li>
-                      <li>
-                        <a href="#">Deep Drop Down 2</a>
-                      </li>
-                      <li>
-                        <a href="#">Deep Drop Down 3</a>
-                      </li>
-                      <li>
-                        <a href="#">Deep Drop Down 4</a>
-                      </li>
-                      <li>
-                        <a href="#">Deep Drop Down 5</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">Drop Down 2</a>
-                  </li>
-                  <li>
-                    <a href="#">Drop Down 3</a>
-                  </li>
-                  <li>
-                    <a href="#">Drop Down 4</a>
-                  </li>
-                </ul>
-              </li>
               <li>
-                <a className="nav-link scrollto" href="#contact">
-                  Contact
+                <a className="nav-link scrollto" href="#faq">
+                  FAQ
                 </a>
               </li>
             </ul>
@@ -88,7 +44,7 @@ export default function index() {
           </nav>
 
           <a href="#appointment" className="appointment-btn scrollto">
-            <span className="d-none d-md-inline">Make an</span> Appointment
+            Login
           </a>
         </div>
       </header>
@@ -264,7 +220,7 @@ export default function index() {
                     data-purecounter-duration="1"
                     className="purecounter"
                   ></span>
-                  <p>Research Labs</p>
+                  <p>Happy Patients</p>
                 </div>
               </div>
 
@@ -387,123 +343,6 @@ export default function index() {
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-
-        <section id="appointment" className="appointment section-bg">
-          <div className="container">
-            <div className="section-title">
-              <h2>Make an Appointment</h2>
-              <p>
-                Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-                ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-                quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-                Quia fugiat sit in iste officiis commodi quidem hic quas.
-              </p>
-            </div>
-
-            <form
-              action="forms/appointment.php"
-              method="post"
-              role="form"
-              className="php-email-form"
-            >
-              <div className="row">
-                <div className="col-md-4 form-group">
-                  <input
-                    type="text"
-                    name="name"
-                    className="form-control"
-                    id="name"
-                    placeholder="Your Name"
-                    data-rule="minlen:4"
-                    data-msg="Please enter at least 4 chars"
-                  />
-                  <div className="validate"></div>
-                </div>
-                <div className="col-md-4 form-group mt-3 mt-md-0">
-                  <input
-                    type="email"
-                    className="form-control"
-                    name="email"
-                    id="email"
-                    placeholder="Your Email"
-                    data-rule="email"
-                    data-msg="Please enter a valid email"
-                  />
-                  <div className="validate"></div>
-                </div>
-                <div className="col-md-4 form-group mt-3 mt-md-0">
-                  <input
-                    type="tel"
-                    className="form-control"
-                    name="phone"
-                    id="phone"
-                    placeholder="Your Phone"
-                    data-rule="minlen:4"
-                    data-msg="Please enter at least 4 chars"
-                  />
-                  <div className="validate"></div>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-md-4 form-group mt-3">
-                  <input
-                    type="datetime"
-                    name="date"
-                    className="form-control datepicker"
-                    id="date"
-                    placeholder="Appointment Date"
-                    data-rule="minlen:4"
-                    data-msg="Please enter at least 4 chars"
-                  />
-                  <div className="validate"></div>
-                </div>
-                <div className="col-md-4 form-group mt-3">
-                  <select
-                    name="department"
-                    id="department"
-                    className="form-select"
-                  >
-                    <option value="">Select Department</option>
-                    <option value="Department 1">Department 1</option>
-                    <option value="Department 2">Department 2</option>
-                    <option value="Department 3">Department 3</option>
-                  </select>
-                  <div className="validate"></div>
-                </div>
-                <div className="col-md-4 form-group mt-3">
-                  <select name="doctor" id="doctor" className="form-select">
-                    <option value="">Select Doctor</option>
-                    <option value="Doctor 1">Doctor 1</option>
-                    <option value="Doctor 2">Doctor 2</option>
-                    <option value="Doctor 3">Doctor 3</option>
-                  </select>
-                  <div className="validate"></div>
-                </div>
-              </div>
-
-              <div className="form-group mt-3">
-                <textarea
-                  className="form-control"
-                  name="message"
-                  rows={5}
-                  placeholder="Message (Optional)"
-                ></textarea>
-                <div className="validate"></div>
-              </div>
-              <div className="mb-3">
-                <div className="loading">Loading</div>
-                <div className="error-message"></div>
-                <div className="sent-message">
-                  Your appointment request has been sent successfully. Thank
-                  you!
-                </div>
-              </div>
-              <div className="text-center">
-                <button type="submit">Make an Appointment</button>
-              </div>
-            </form>
           </div>
         </section>
 
@@ -1123,245 +962,6 @@ export default function index() {
             </div>
           </div>
         </section>
-
-        <section id="gallery" className="gallery">
-          <div className="container">
-            <div className="section-title">
-              <h2>Gallery</h2>
-              <p>
-                Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-                ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-                quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-                Quia fugiat sit in iste officiis commodi quidem hic quas.
-              </p>
-            </div>
-          </div>
-
-          <div className="container-fluid">
-            <div className="row g-0">
-              <div className="col-lg-3 col-md-4">
-                <div className="gallery-item">
-                  <a
-                    href="/img/gallery/gallery-1.jpg"
-                    className="galelry-lightbox"
-                  >
-                    <img
-                      src="/img/gallery/gallery-1.jpg"
-                      alt=""
-                      className="img-fluid"
-                    />
-                  </a>
-                </div>
-              </div>
-
-              <div className="col-lg-3 col-md-4">
-                <div className="gallery-item">
-                  <a
-                    href="/img/gallery/gallery-2.jpg"
-                    className="galelry-lightbox"
-                  >
-                    <img
-                      src="/img/gallery/gallery-2.jpg"
-                      alt=""
-                      className="img-fluid"
-                    />
-                  </a>
-                </div>
-              </div>
-
-              <div className="col-lg-3 col-md-4">
-                <div className="gallery-item">
-                  <a
-                    href="/img/gallery/gallery-3.jpg"
-                    className="galelry-lightbox"
-                  >
-                    <img
-                      src="/img/gallery/gallery-3.jpg"
-                      alt=""
-                      className="img-fluid"
-                    />
-                  </a>
-                </div>
-              </div>
-
-              <div className="col-lg-3 col-md-4">
-                <div className="gallery-item">
-                  <a
-                    href="/img/gallery/gallery-4.jpg"
-                    className="galelry-lightbox"
-                  >
-                    <img
-                      src="/img/gallery/gallery-4.jpg"
-                      alt=""
-                      className="img-fluid"
-                    />
-                  </a>
-                </div>
-              </div>
-
-              <div className="col-lg-3 col-md-4">
-                <div className="gallery-item">
-                  <a
-                    href="/img/gallery/gallery-5.jpg"
-                    className="galelry-lightbox"
-                  >
-                    <img
-                      src="/img/gallery/gallery-5.jpg"
-                      alt=""
-                      className="img-fluid"
-                    />
-                  </a>
-                </div>
-              </div>
-
-              <div className="col-lg-3 col-md-4">
-                <div className="gallery-item">
-                  <a
-                    href="/img/gallery/gallery-6.jpg"
-                    className="galelry-lightbox"
-                  >
-                    <img
-                      src="/img/gallery/gallery-6.jpg"
-                      alt=""
-                      className="img-fluid"
-                    />
-                  </a>
-                </div>
-              </div>
-
-              <div className="col-lg-3 col-md-4">
-                <div className="gallery-item">
-                  <a
-                    href="/img/gallery/gallery-7.jpg"
-                    className="galelry-lightbox"
-                  >
-                    <img
-                      src="/img/gallery/gallery-7.jpg"
-                      alt=""
-                      className="img-fluid"
-                    />
-                  </a>
-                </div>
-              </div>
-
-              <div className="col-lg-3 col-md-4">
-                <div className="gallery-item">
-                  <a
-                    href="/img/gallery/gallery-8.jpg"
-                    className="galelry-lightbox"
-                  >
-                    <img
-                      src="/img/gallery/gallery-8.jpg"
-                      alt=""
-                      className="img-fluid"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="contact" className="contact">
-          <div className="container">
-            <div className="section-title">
-              <h2>Contact</h2>
-              <p>
-                Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-                ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-                quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-                Quia fugiat sit in iste officiis commodi quidem hic quas.
-              </p>
-            </div>
-          </div>
-
-          <div className="container">
-            <div className="row mt-5">
-              <div className="col-lg-4">
-                <div className="info">
-                  <div className="address">
-                    <i className="bi bi-geo-alt"></i>
-                    <h4>Location:</h4>
-                    <p>A108 Adam Street, New York, NY 535022</p>
-                  </div>
-
-                  <div className="email">
-                    <i className="bi bi-envelope"></i>
-                    <h4>Email:</h4>
-                    <p>info@example.com</p>
-                  </div>
-
-                  <div className="phone">
-                    <i className="bi bi-phone"></i>
-                    <h4>Call:</h4>
-                    <p>+1 5589 55488 55s</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-8 mt-5 mt-lg-0">
-                <form
-                  action="forms/contact.php"
-                  method="post"
-                  role="form"
-                  className="php-email-form"
-                >
-                  <div className="row">
-                    <div className="col-md-6 form-group">
-                      <input
-                        type="text"
-                        name="name"
-                        className="form-control"
-                        id="name"
-                        placeholder="Your Name"
-                        required
-                      />
-                    </div>
-                    <div className="col-md-6 form-group mt-3 mt-md-0">
-                      <input
-                        type="email"
-                        className="form-control"
-                        name="email"
-                        id="email"
-                        placeholder="Your Email"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div className="form-group mt-3">
-                    <input
-                      type="text"
-                      className="form-control"
-                      name="subject"
-                      id="subject"
-                      placeholder="Subject"
-                      required
-                    />
-                  </div>
-                  <div className="form-group mt-3">
-                    <textarea
-                      className="form-control"
-                      name="message"
-                      rows={5}
-                      placeholder="Message"
-                      required
-                    ></textarea>
-                  </div>
-                  <div className="my-3">
-                    <div className="loading">Loading</div>
-                    <div className="error-message"></div>
-                    <div className="sent-message">
-                      Your message has been sent. Thank you!
-                    </div>
-                  </div>
-                  <div className="text-center">
-                    <button type="submit">Send Message</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
 
       <footer id="footer">
@@ -1371,14 +971,12 @@ export default function index() {
               <div className="col-lg-3 col-md-6 footer-contact">
                 <h3>KitaSehat</h3>
                 <p>
-                  A108 Adam Street <br />
-                  New York, NY 535022
+                  Gedung Menara 165, Lantai 4, Jl TB Simatupang Kav. 1, Cilandak
+                  Timur, Jakarta Selatan
                   <br />
-                  United States <br />
+                  <strong>Phone:</strong> +62 811-900-811
                   <br />
-                  <strong>Phone:</strong> +1 5589 55488 55
-                  <br />
-                  <strong>Email:</strong> info@example.com
+                  <strong>Email:</strong> sales@sakataguna.com
                   <br />
                 </p>
               </div>
@@ -1413,36 +1011,36 @@ export default function index() {
                 <ul>
                   <li>
                     <i className="bx bx-chevron-right"></i>{" "}
-                    <a href="#">Web Design</a>
+                    <a href="#">Cardiology</a>
                   </li>
                   <li>
                     <i className="bx bx-chevron-right"></i>
-                    <a href="#">Web Development</a>
+                    <a href="#">Neurology</a>
                   </li>
                   <li>
                     <i className="bx bx-chevron-right"></i>
-                    <a href="#">Product Management</a>
+                    <a href="#">Hepatology</a>
                   </li>
                   <li>
                     <i className="bx bx-chevron-right"></i>{" "}
-                    <a href="#">Marketing</a>
+                    <a href="#">Pediatrics</a>
                   </li>
                   <li>
                     <i className="bx bx-chevron-right"></i>
-                    <a href="#">Graphic Design</a>
+                    <a href="#">Eye Care</a>
                   </li>
                 </ul>
               </div>
 
               <div className="col-lg-4 col-md-6 footer-newsletter">
-                <h4>Join Our Newsletter</h4>
+                <h4>Instant Contact US</h4>
                 <p>
                   Tamen quem nulla quae legam multos aute sint culpa legam
                   noster magna
                 </p>
                 <form action="" method="post">
                   <input type="email" name="email" />
-                  <input type="submit" value="Subscribe" />
+                  <input type="submit" value="Contact Us!" />
                 </form>
               </div>
             </div>

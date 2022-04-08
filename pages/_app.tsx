@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         {/* Favicon */}
-        <link href="/img/favicon.png" rel="icon" />
+        <link href="/icon/doctor.png" rel="icon" />
         <link href="/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
         {/* Google Fonts */}
@@ -52,6 +52,8 @@ function MyApp({ Component, pageProps }: AppProps) {
 
         {/* Main JS Files */}
         <script src="/js/main.js"></script>
+
+        <title>Home | Kita Sehat</title>
       </Head>
       <Component {...pageProps} />
     </>
